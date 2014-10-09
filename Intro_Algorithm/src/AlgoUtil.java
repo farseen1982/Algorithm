@@ -8,8 +8,16 @@ public class AlgoUtil {
 
 	}
 	public static void printArray(String[] array) {
+		System.out.println("Input: ");
 		for (int i = 0; i < array.length; i++) {
-			System.out.print(array + "   ");
+			System.out.print(array[i] + "   ");
+		}
+	}
+	
+	public static void printArray(int[] array) {
+		System.out.println("Delta: ");
+		for (int i = 0; i < array.length; i++) {
+			System.out.print(array[i] + "   ");
 		}
 	}
 }
