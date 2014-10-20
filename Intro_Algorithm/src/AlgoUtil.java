@@ -15,9 +15,16 @@ public class AlgoUtil {
 	}
 	
 	public static void printArray(int[] array) {
-		System.out.println("Delta: ");
+		System.out.println("Array: ");
 		for (int i = 0; i < array.length; i++) {
 			System.out.print(array[i] + "   ");
 		}
+	}
+	public static void printArray(int[] array, int left, int right) {
+		System.out.println("Array from: "+ left + "to: "+ right);
+		for (int i = left; i < right; i++) {
+			System.out.print(array[i] + "   ");
+		}
+		
 	}
 }
