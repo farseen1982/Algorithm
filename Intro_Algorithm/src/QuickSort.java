@@ -21,14 +21,16 @@ public class QuickSort {
 	}
 
 	public static void quickSort(int[] a, int left, int right) {
-		int mid = partition(a, left, right);
-		quickSort(a, left, mid);
-		quickSort(a, mid, right);
+		if (left < right) {
+			int mid = partition(a, left, right);
+			quickSort(a, left, mid-1);
+			quickSort(a, mid, right);
+		}
 
 	}
 
 	public static int partition(int[] a, int left, int right) {
-		System.out.println("************Start Partition From: " + left
+		System.out.println("\n***********Start Partition From: " + left
 				+ "  To: " + right);
 		AlgoUtil.printArray(a, left, right);
 		int pivot = a[right];
@@ -48,7 +50,7 @@ public class QuickSort {
 		temp = a[right];
 		a[right] = a[i + 1];
 		a[i + 1] = temp;
-		System.out.println("************End Partition with Pivot index: "
+		System.out.println("\n************End Partition with Pivot index: "
 				+ (i + 1));
 		AlgoUtil.printArray(a, left, right);
 		return i + 1;

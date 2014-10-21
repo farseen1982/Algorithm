@@ -21,8 +21,8 @@ public class AlgoUtil {
 		}
 	}
 	public static void printArray(int[] array, int left, int right) {
-		System.out.println("Array from: "+ left + "to: "+ right);
-		for (int i = left; i < right; i++) {
+		System.out.println("Array from: "+ left + "  to: "+ right);
+		for (int i = left; i <= right; i++) {
 			System.out.print(array[i] + "   ");
 		}
 		
