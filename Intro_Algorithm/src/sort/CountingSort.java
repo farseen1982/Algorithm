@@ -1,5 +1,7 @@
 package sort;
 
+import datastructure.AlgoUtil;
+
 public class CountingSort {
 
 	public CountingSort() {

@@ -1,6 +1,6 @@
 package select;
 
-import sort.AlgoUtil;
+import datastructure.AlgoUtil;
 import sort.QuickSort;
 
 public class RandomSelect {

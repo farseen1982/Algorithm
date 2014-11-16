@@ -1,4 +1,6 @@
-package sort;
+package datastructure;
+
+
 public class AlgoUtil {
 	public static int[] covert2int(String[] array) {
 		int[] result = new int[array.length];

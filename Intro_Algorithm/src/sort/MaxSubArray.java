@@ -1,4 +1,7 @@
 package sort;
+
+import datastructure.AlgoUtil;
+
 public class MaxSubArray {
 	public static int[] findMaxSubArray(int[] array, int low, int high) {
 		int[] result = new int[3];
